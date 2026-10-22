@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNÉA - Nos produits</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">LUNÉA</a>
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link active" href="produit.html">Nos produits</a>
+            <a class="nav-link" href="apropos.html">À propos</a>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <h1 class="text-center mb-4">Nos produits</h1>
+    <p class="text-center mb-5">Découvrez notre sélection pour votre routine beauté.</p>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="../img/img.png" class="card-img-top product-image" alt="Produit de soin LUNÉA">
+                <div class="card-body">
+                    <h5 class="card-title">Crème hydratante</h5>
+                    <p class="card-text">Une peau douce et confortable au quotidien.</p>
+                    <p class="fw-bold">129 DH</p>
+                    <button class="btn btn-dark" onclick="ajouterAuPanier('Crème hydratante')">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="../img/img.png" class="card-img-top product-image" alt="Sérum visage LUNÉA">
+                <div class="card-body">
+                    <h5 class="card-title">Sérum visage</h5>
+                    <p class="card-text">Un geste simple pour compléter votre routine.</p>
+                    <p class="fw-bold">149 DH</p>
+                    <button class="btn btn-dark" onclick="ajouterAuPanier('Sérum visage')">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <img src="../img/img.png" class="card-img-top product-image" alt="Nettoyant visage LUNÉA">
+                <div class="card-body">
+                    <h5 class="card-title">Nettoyant visage</h5>
+                    <p class="card-text">Pour nettoyer délicatement la peau.</p>
+                    <p class="fw-bold">89 DH</p>
+                    <button class="btn btn-dark" onclick="ajouterAuPanier('Nettoyant visage')">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="message-panier" class="text-center mt-4"></p>
+</main>
+
+<script src="../monScript/bootstrap.min.js"></script>
+<script src="../monScript/script.js"></script>
+</body>
+</html>

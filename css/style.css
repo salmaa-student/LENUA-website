@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #34352b;
+    background-color: #fffdf9;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    color: #34352b;
+}
+
+.nav-link {
+    color: #34352b;
+    margin-left: 12px;
+}
+
+.nav-link:hover {
+    color: #879078;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url("../img/img.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero .btn,
+.card .btn {
+    background-color: #454b3c;
+    border-color: #454b3c;
+}
+
+.hero .btn:hover,
+.card .btn:hover {
+    background-color: #707963;
+    border-color: #707963;
+}
+
+.card {
+    border: 1px solid #e8e3d9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+footer {
+    color: #55594b;
+}
